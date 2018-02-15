@@ -1,0 +1,45 @@
+.header {
+  display: flow-root;
+  border-bottom: 1px solid #eeeeee;
+  border-top: 1px solid #eeeeee;
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+}
+
+.header #logoDiv {
+  margin: 5px 0 0 20px;
+  float: left;
+}
+
+.header #logoDiv #logoRedux {
+  height: 50px;
+}
+
+.header ul {
+  float: right;
+  margin-right: 50px;
+}
+
+.header ul li {
+  margin: 5px 20px 5px 20px;
+  display: inline-block;
+  list-style: none;
+}
+
+.header ul li a {
+  font-size: small;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.header ul li .selected {
+  color: crimson;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+}
+

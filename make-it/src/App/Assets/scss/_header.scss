@@ -1,0 +1,33 @@
+.header {
+  display: flow-root;
+  border-bottom: 1px solid #eeeeee;
+  border-top: 1px solid #eeeeee;
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+  #logoDiv{
+    margin: 5px 0 0 20px;
+    float: left;
+    #logoRedux {
+      height: 50px;
+    }
+  }
+  ul {
+    float: right;
+    margin-right: 50px;
+    li {
+      margin: 5px 20px 5px 20px;
+      display: inline-block;
+      list-style: none;
+      a {
+        font-size: small;
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+      }
+      .selected {
+        color: crimson;
+      }
+    }
+  }
+}
+
