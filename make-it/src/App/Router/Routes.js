@@ -1,8 +1,11 @@
 import React from 'react';
 import Logo from '../Header/HeaderComponent/Logo';
-import Soucis from "../Layout/Soucis";
-import CreateAccount from '../Layout/CreateAccount/CreateAccount'
+import CreateAccount from '../Layout/CreateAccount/CreateAccount';
+import Pricing from '../Layout/Pricing/Pircing';
 import {BrowserRouter as Router, Route, NavLink, Switch} from 'react-router-dom';
+import Track from "../Layout/SubmitTrack/Track";
+import Work from "../Layout/Works/Work";
+import Login from "../Layout/Login/Login";
 
 export default class Routes extends React.Component {
     render() {
@@ -17,17 +20,18 @@ export default class Routes extends React.Component {
                                 <li><NavLink activeClassName="selected" to='/CreateAccount'>Create an account</NavLink></li>
                                 <li><NavLink activeClassName="selected" to='/Works'>How it works</NavLink></li>
                                 <li><NavLink activeClassName="selected" to='/Pricing'>Pricing</NavLink></li>
-                                <li><NavLink activeClassName="selected" to='/Soucis'>Log in | Sign in</NavLink></li>
+                                <li><NavLink activeClassName="selected" to='/Login'>Log in | Sign in</NavLink></li>
                             </ul>
                         </div>
                     </div>
                     <div className="content">
                         <Switch>
-                            <Route exact path='/Tracks'/>
+                            <Route exact path='/Tracks' component={Work}/>
                             <Route exact path='/CreateAccount' component={CreateAccount}/>
-                            <Route exact path='/Works' component={Soucis}/>
-                            <Route exact path='/Pricing' component={Soucis}/>
-                            <Route exact path='/' component={Soucis}/>
+                            <Route exact path='/Works' component={Pricing}/>
+                            <Route exact path='/Pricing' component={Track}/>
+                            <Route exact path='/Login' component={Login}/>
+                            <Route path='/' component={Login}/>
                         </Switch>
                     </div>
                 </div>
