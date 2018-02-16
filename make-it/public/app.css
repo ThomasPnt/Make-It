@@ -37,6 +37,57 @@
   color: crimson;
 }
 
+form {
+  margin: 0 auto;
+  width: 50%;
+  display: table;
+}
+
+form button {
+  margin: auto;
+  width: calc(100% + 20px);
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  background-color: #B2AFA1;
+  text-transform: uppercase;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 2px;
+  border: none;
+}
+
+form .InputForm {
+  margin: auto;
+  border-radius: 1px;
+  margin: 20px 0px;
+}
+
+form .InputForm input {
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 16px;
+  padding: 20px 0px;
+  background-color: #eeeeee;
+  border: 1px solid #D7C5C2;
+  padding-left: 20px;
+}
+
+@media (min-width: 1100px) {
+  form {
+    width: 35%;
+  }
+}
+
+.signin {
+  margin: 0 auto;
+}
+
+.signin h1 {
+  margin: auto;
+  text-align: center;
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -44,6 +95,6 @@ body {
 }
 
 .content {
-  text-align: center;
+  margin: 0 auto;
 }
 

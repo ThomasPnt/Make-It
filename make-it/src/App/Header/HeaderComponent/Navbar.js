@@ -11,7 +11,7 @@ export default class Navbar extends React.Component {
                     <li><NavLink activeClassName="selected" to='/CreateAccount'>Create an account</NavLink></li>
                     <li><NavLink activeClassName="selected" to='/Works'>How it works</NavLink></li>
                     <li><NavLink activeClassName="selected" to='/Pricing'>Pricing</NavLink></li>
-                    <li><NavLink activeClassName="selected" to='/Login'>Log in | Sign in</NavLink></li>
+                    <li><NavLink activeClassName="selected" to='/SignIn'>Log in | Sign in</NavLink></li>
                 </ul>
             </div>
         )

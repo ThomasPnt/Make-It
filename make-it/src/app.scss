@@ -1,4 +1,6 @@
 @import "./App/Assets/scss/_header.scss";
+@import "./App/Assets/scss/_input.scss";
+@import "./App/Assets/scss/_signin.scss";
 
 body{
   box-sizing: border-box;
@@ -6,5 +8,5 @@ body{
 }
 
 .content{
-  text-align: center;
+  margin: 0 auto;
 }

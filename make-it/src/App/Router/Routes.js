@@ -5,8 +5,8 @@ import Pricing from '../Layout/Pricing/Pircing';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Track from "../Layout/SubmitTrack/Track";
 import Work from "../Layout/Works/Work";
-import Login from "../Layout/Login/Login";
 import Navbar from "../Header/HeaderComponent/Navbar";
+import SignIn from "../Layout/SignIn/SignIn";
 
 export default class Routes extends React.Component {
     render() {
@@ -23,8 +23,8 @@ export default class Routes extends React.Component {
                             <Route exact path='/CreateAccount' component={CreateAccount}/>
                             <Route exact path='/Works' component={Pricing}/>
                             <Route exact path='/Pricing' component={Track}/>
-                            <Route exact path='/Login' component={Login}/>
-                            <Route path='/' component={Login}/>
+                            <Route exact path='/SignIn' component={SignIn}/>
+                            <Route path='/' component={SignIn}/>
                         </Switch>
                     </div>
                 </div>
