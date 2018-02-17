@@ -21,8 +21,8 @@ let SignInForm = (props) => {
             </Field>
             <div className="checkboxDesc">
                 <Field name="news" component={Input} type="checkbox"/>
-                <p>I'd like to receive news, promotions, and updates via email about ViberMusic and its partners. You
-                    can subscribe anytime</p>
+                <p>I'd like to receive news, promotions, and updates via email about ViberMusic and its partners.<span id="spanTxt"> You
+                    can subscribe anytime</span></p>
             </div>
             <div className="checkboxDesc">
                 <Field name="cgu" component={Input} type="checkbox"/>

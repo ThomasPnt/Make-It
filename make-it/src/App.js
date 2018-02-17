@@ -15,6 +15,7 @@ const store = createStore(reduc);
 
 class App extends Component {
     render() {
+        console.log(store.getState());
         return (
             <div className="App">
                 <Provider store={store}>

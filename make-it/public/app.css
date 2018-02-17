@@ -73,6 +73,11 @@ form .InputForm input {
   padding-left: 20px;
 }
 
+form .InputForm input:focus {
+  border: 1px solid black;
+  outline: none;
+}
+
 .checkboxDesc {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,6 +116,10 @@ form .InputForm input {
 
 .signin a {
   color: crimson;
+}
+
+.signin #spanTxt {
+  color: #B2AFA1;
 }
 
 body {

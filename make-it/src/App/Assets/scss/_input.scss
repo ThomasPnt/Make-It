@@ -27,6 +27,10 @@ form {
       border: 1px solid #D7C5C2;
       padding-left: 20px;
     }
+    input:focus{
+      border: 1px solid black;
+      outline: none ;
+    }
   }
 }
 
