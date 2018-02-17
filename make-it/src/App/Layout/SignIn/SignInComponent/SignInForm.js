@@ -2,22 +2,14 @@ import React from 'react';
 import {Field, reduxForm } from 'redux-form';
 import Input from '../../Input';
 
+import {connect} from "react-redux";
+import {addUser} from "../../../action";
+
 var countries = require("i18n-iso-countries");
 const pays = countries.getAlpha3Codes();
 
-const selectCountry = () => {
-    return(
-        pays.map((key,value) => {
-            return <option value={key}>{value}</option>
-        })
-    )
-}
-
-
 let SignInForm = (props) => {
-    console.log(pays);
-
-    const {handleSubmit} = props;
+    const { handleSubmit } = props;
     return (
         <form onSubmit={handleSubmit}>
             <Field name="email" component={Input} type="email" placeholder="Email"/>
@@ -27,10 +19,25 @@ let SignInForm = (props) => {
             <Field name="passwordConfirmation" component={Input} type="password" placeholder="Password Confirmation"/>
             <Field name="country" component="select" placeholder="Country of Living">
             </Field>
+            <Field name="news" component={Input} type="checkbox"/>
+                <p>I'd like to receive news, promotions, and updates via email about ViberMusic and its partners. You can subscribe anytime</p>
+            <Field name="cgu" component={Input} type="checkbox"/>
+                <p> I agree to ViberMusic Terms of Use, and Privacy Police </p>
             <button type="submit">Sign Up</button>
         </form>
     )
 };
+
+/*SignInForm = connect(
+    function mapStateToProps(state){
+        return {user : state};
+    },
+    function mapDispatchToProps(dispatch){
+        return {
+            addUser: data => dispatch(addUser(data))
+        }
+    }
+)(SignInForm);*/
 
 SignInForm = reduxForm({
     form: 'signIn',
