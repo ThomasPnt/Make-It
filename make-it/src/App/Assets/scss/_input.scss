@@ -30,6 +30,22 @@ form {
   }
 }
 
+.checkboxDesc{
+  display: flex;
+  .InputForm{
+    margin-right: 10px;
+    input{
+      width: 20px;
+      float: left;
+      margin: 0;
+    }
+    p{
+      width: 90%;
+      float: left;
+    }
+  }
+}
+
 @media (min-width : 1100px) {
   form{
     width: 35%;

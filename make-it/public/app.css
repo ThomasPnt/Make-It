@@ -73,6 +73,27 @@ form .InputForm input {
   padding-left: 20px;
 }
 
+.checkboxDesc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.checkboxDesc .InputForm {
+  margin-right: 10px;
+}
+
+.checkboxDesc .InputForm input {
+  width: 20px;
+  float: left;
+  margin: 0;
+}
+
+.checkboxDesc .InputForm p {
+  width: 90%;
+  float: left;
+}
+
 @media (min-width: 1100px) {
   form {
     width: 35%;
@@ -83,9 +104,13 @@ form .InputForm input {
   margin: 0 auto;
 }
 
-.signin h1 {
-  margin: auto;
+.signin h2,
+.signin h4 {
   text-align: center;
+}
+
+.signin a {
+  color: crimson;
 }
 
 body {

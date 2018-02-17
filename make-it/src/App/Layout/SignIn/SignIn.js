@@ -1,5 +1,7 @@
 import React from 'react';
 import SignInForm from "./SignInComponent/SignInForm";
+import FooterSignIn from "./SignInComponent/FooterSignIn";
+import HeaderSignIn from "./SignInComponent/HeaderSignIn";
 
 
 export default class SignIn extends React.Component {
@@ -9,8 +11,9 @@ export default class SignIn extends React.Component {
     render() {
         return (
             <div className="signin">
-                <h1>futur login</h1>
+                <HeaderSignIn/>
                 <SignInForm onSubmit={this.submit}/>
+                <FooterSignIn/>
             </div>
         )
     }
