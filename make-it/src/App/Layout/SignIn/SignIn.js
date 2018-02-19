@@ -3,12 +3,17 @@ import SignInForm from "./SignInComponent/SignInForm";
 import FooterSignIn from "./SignInComponent/FooterSignIn";
 import HeaderSignIn from "./SignInComponent/HeaderSignIn";
 
+import {connect} from "react-redux";
+import {addUser} from "../../action";
 
-export default class SignIn extends React.Component {
-    submit = values => {
-        console.log(values)
-    }
+
+class SignIn extends React.Component {
+    submit = value => {
+        console.log(value)
+    };
+
     render() {
+
         return (
             <div className="signin">
                 <HeaderSignIn/>
@@ -19,15 +24,14 @@ export default class SignIn extends React.Component {
     }
 }
 
+function mapStateToProps(state){
+    return {user : state.user};
+}
 
-/*
-SignIn = connect(
-    function mapStateToProps(state){
-        return {user : state};
-    },
-    function mapDispatchToProps(dispatch){
-        return {
-            addUser: data => dispatch(addUser(data))
-        }
+function mapDispatchToProps(dispatch) {
+    return {
+        addUser: value => dispatch(addUser(value))
     }
-)(SignIn);*/
+}
+
+export default connect(mapDispatchToProps,mapStateToProps)(SignIn);
