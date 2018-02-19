@@ -73,8 +73,28 @@ form .InputForm input {
   padding-left: 20px;
 }
 
+form .InputForm .weak[type='password'] {
+  background-image: url(https://image.flaticon.com/icons/svg/149/149465.svg);
+}
+
+form .InputForm .middle[type='password'] {
+  background-image: url(https://image.flaticon.com/icons/svg/149/149464.svg);
+}
+
+form .InputForm #weak {
+  color: green;
+}
+
+form .InputForm #middle {
+  color: orange;
+}
+
+form .InputForm #strong {
+  color: red;
+}
+
 form .InputForm input[type='password'] {
-  background-image: url(https://image.flaticon.com/icons/svg/481/481195.svg);
+  background-image: url(https://image.flaticon.com/icons/svg/61/61457.svg);
   background-position: 95%;
   background-repeat: no-repeat;
   background-size: 26px;
@@ -115,6 +135,13 @@ form select {
 form select:focus {
   outline: none;
   border: 1px solid black;
+}
+
+form #error {
+  color: red;
+  padding-left: 20px;
+  background-image: url(https://image.flaticon.com/icons/svg/149/149149.svg);
+  background-repeat: no-repeat;
 }
 
 .checkboxDesc {
