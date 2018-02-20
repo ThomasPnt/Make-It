@@ -18,10 +18,10 @@ export default class Routes extends React.Component {
                     </div>
                     <div className="content">
                         <Switch>
-                            <Route exact path='/Tracks' component={Work}/>
+                            <Route exact path='/Tracks' component={Track}/>
                             <Route exact path='/CreateAccount' component={CreateAccount}/>
-                            <Route exact path='/Works' component={Pricing}/>
-                            <Route exact path='/Pricing' component={Track}/>
+                            <Route exact path='/Works' component={Work}/>
+                            <Route exact path='/Pricing' component={Pricing}/>
                             <Route exact path='/SignIn' component={SignIn}/>
                             <Route path='/' component={SignIn}/>
                         </Switch>

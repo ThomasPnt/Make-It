@@ -1,11 +1,25 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import PostList from './WorksComponent/PostList';
 
-export default class Work extends React.Component {
+
+class Work extends React.Component {
     render() {
         return (
             <div>
-                <h1>It's my work</h1>
+                <h1>Works</h1>
+                <div>
+                {/*    <PostList posts={this.props.posts}/>*/}
+                </div>
             </div>
         )
     }
 }
+
+function mapStateToProps(state , ownProps) {
+    console.log(state);
+    return { posts: state.posts };
+}
+
+
+export default connect(mapStateToProps)(Work);
