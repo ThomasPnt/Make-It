@@ -27,11 +27,17 @@ class SignInForm extends React.Component {
         const {handleSubmit} = this.props;
         return (
             <form onSubmit={handleSubmit}>
+                <span className="sideBar bug"/>
                 <Field name="email" component={Input} type="email" placeholder="Email"/>
+                <span className="sideBar"/>
                 <Field name="firstName" component={Input} type="text" placeholder="First Name"/>
+                <span className="sideBar"/>
                 <Field name="lastName" component={Input} type="text" placeholder="Last Name"/>
+                <span className="sideBar"/>
                 <Field name="password" component={Input} type="password" placeholder="Password" className={this.state.pass} onChange={this.password.bind(this)}/>
+                <span className="sideBar"/>
                 <Field name="passwordConfirmation" component={Input} type="password" placeholder="Password Confirmation"/>
+                <span className="sideBar"/>
                 <Field name="country" component="select" placeholder="Country of Living">
                     <option value="">Country of Living</option>
                     {pays.map(countryOptions =>(

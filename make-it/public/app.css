@@ -43,6 +43,18 @@ form {
   display: table;
 }
 
+form .sideBar {
+  position: absolute;
+  height: 40px;
+  width: 25px;
+  border-right: 1px solid black;
+  margin-top: 10px;
+}
+
+form .bug {
+  margin-top: 30px;
+}
+
 form button {
   margin: auto;
   width: 100%;
@@ -65,9 +77,9 @@ form .InputForm {
 
 form .InputForm input {
   text-transform: uppercase;
-  width: calc(100% - 40px);
+  width: calc(100% - 80px);
   font-size: 16px;
-  padding: 20px 20px;
+  padding: 20px 40px;
   background-color: #eeeeee;
   border: 1px solid #B2AFA1;
 }
@@ -132,7 +144,7 @@ form select {
   text-transform: uppercase;
   -webkit-appearance: none;
   width: 100%;
-  padding: 20px 20px 20px 20px;
+  padding: 20px 40px;
   border: 1px solid #B2AFA1;
   background-image: url(https://image.flaticon.com/icons/svg/118/118738.svg);
   background-position: 95%;
