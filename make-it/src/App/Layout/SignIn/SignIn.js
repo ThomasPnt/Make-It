@@ -2,36 +2,43 @@ import React from 'react';
 import SignInForm from "./SignInComponent/SignInForm";
 import FooterSignIn from "./SignInComponent/FooterSignIn";
 import HeaderSignIn from "./SignInComponent/HeaderSignIn";
-
+import {bindActionCreators} from 'redux';
 import {connect} from "react-redux";
-import {addUser} from "../../action";
-
+import {addUser} from "../../ActionUser";
 
 class SignIn extends React.Component {
-    submit = value => {
-        console.log(value)
+    handleSubmit = (values) => {
+        var data = {
+            id : new Date().valueOf(),
+            email : values.email,
+            firstName : values.firstName,
+            lastName : values.lastName,
+            password : values.password,
+            country : values.country,
+            news : values.news
+        };
+        this.props.addUser(data);
     };
 
     render() {
-
         return (
             <div className="signin">
                 <HeaderSignIn/>
-                <SignInForm onSubmit={this.submit}/>
+                <SignInForm onSubmit={this.handleSubmit}/>
                 <FooterSignIn/>
             </div>
         )
     }
 }
 
-function mapStateToProps(state){
-    return {user : state.user};
-}
-
 function mapDispatchToProps(dispatch) {
-    return {
-        addUser: value => dispatch(addUser(value))
-    }
+    return bindActionCreators({addUser},dispatch)
 }
 
-export default connect(mapDispatchToProps,mapStateToProps)(SignIn);
+function mapStateToProps(state) {
+    /*console.log(state.UserReducer);*/
+    return { UserReducer : state.UserReducer };
+}
+
+
+export default connect(mapStateToProps,mapDispatchToProps)(SignIn);

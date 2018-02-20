@@ -21,7 +21,6 @@ class SignInForm extends React.Component {
         } else if(strength.length < 16 ){
             this.setState({pass:'strong'})
         }
-        console.log(this.state.pass);
     }
 
     render() {
@@ -33,7 +32,7 @@ class SignInForm extends React.Component {
                 <Field name="lastName" component={Input} type="text" placeholder="Last Name"/>
                 <Field name="password" component={Input} type="password" placeholder="Password" className={this.state.pass} onChange={this.password.bind(this)}/>
                 <Field name="passwordConfirmation" component={Input} type="password" placeholder="Password Confirmation"/>
-                <Field name="country" component="select" placeholder="Country of Living" >
+                <Field name="country" component="select" placeholder="Country of Living">
                     <option value="">Country of Living</option>
                     {pays.map(countryOptions =>(
                         <option value={countryOptions} key={countryOptions}>
@@ -48,7 +47,7 @@ class SignInForm extends React.Component {
                 </div>
                 <div className="checkboxDesc">
                     <Field name="cgu" component={Input} type="checkbox"/>
-                    <p> I agree to ViberMusic <a>Terms of Use</a>, and <a>Privacy Police</a></p>
+                    <p> I agree to ViberMusic <a href=''>Terms of Use</a>, and <a href=''>Privacy Police</a></p>
                 </div>
                 <button type="submit">Sign Up</button>
             </form>
@@ -58,7 +57,7 @@ class SignInForm extends React.Component {
 
 export default reduxForm({
     form: 'signIn',
-    field: ['email','firstName','lastName','password','passwordConfirmation','country','news','cgu'],
+    fields: ['email','firstName','lastName','password','country','news'],
     validate,
 })(SignInForm)
 

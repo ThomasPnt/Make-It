@@ -37,6 +37,8 @@ const validate = values => {
 
     if(!values.country){
         errors.country = "Required";
+    } else if(values.country === ""){
+        errors.country = "Required";
     }
 
     return errors;

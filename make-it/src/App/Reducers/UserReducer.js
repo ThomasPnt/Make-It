@@ -1,17 +1,15 @@
-import {ADD_USER} from "../action";
-
 const initialState = {};
 
-const userReducer = (state = initialState, action) => {
+const UserReducer = (state = initialState, action ) => {
     switch (action.type) {
         case 'ADD_USER' :
             return {
                 ...state,
-                user: state.user.concat(action.newUser),
+                user : action.payload,
             };
         default :
             return state
     }
 };
 
-export default userReducer;
+export default UserReducer;

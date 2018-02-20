@@ -1,8 +1,8 @@
 export const ADD_USER = 'ADD_USER';
 
-export function addUser(user){
+export function addUser(data){
     return {
         type: 'ADD_USER',
-        user : user,
-    };
+        payload: data,
+    }
 }
