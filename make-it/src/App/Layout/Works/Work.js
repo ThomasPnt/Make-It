@@ -16,7 +16,7 @@ class Work extends React.Component {
     }
 }
 
-function mapStateToProps(state , ownProps) {
+function mapStateToProps(state) {
     return { posts: state.PostReducer };
 }
 

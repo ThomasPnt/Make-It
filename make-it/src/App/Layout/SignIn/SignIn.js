@@ -4,7 +4,7 @@ import FooterSignIn from "./SignInComponent/FooterSignIn";
 import HeaderSignIn from "./SignInComponent/HeaderSignIn";
 import {bindActionCreators} from 'redux';
 import {connect} from "react-redux";
-import {addUser} from "../../ActionUser";
+import {addUser} from "../../Actions/ActionUser";
 
 class SignIn extends React.Component {
     handleSubmit = (values) => {

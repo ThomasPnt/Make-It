@@ -1,4 +1,4 @@
-import postApi from './Api/postApi';
+import postApi from '../Api/postApi';
 
 export const LOAD_API_SUCCESS = 'LOAD_API_SUCCESS';
 
