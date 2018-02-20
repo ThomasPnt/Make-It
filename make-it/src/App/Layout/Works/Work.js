@@ -6,9 +6,9 @@ import PostList from './WorksComponent/PostList';
 class Work extends React.Component {
     render() {
         return (
-            <div>
+            <div className="work">
                 <h1>Works</h1>
-                <div>
+                <div className="list">
                     <PostList posts={this.props.posts}/>
                 </div>
             </div>

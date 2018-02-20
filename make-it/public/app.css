@@ -232,6 +232,16 @@ form #error {
   }
 }
 
+.work {
+  margin: 0 auto;
+  width: 50%;
+  overflow-scrolling: hidden;
+}
+
+.work h1 {
+  text-align: center;
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
