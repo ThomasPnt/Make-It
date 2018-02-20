@@ -7,7 +7,9 @@ export default class PostList extends React.Component {
             <ol className="list-post">
                 {posts.map( post =>(
                     <li className='list-post-item' key={post.id}>
-                        {post.title}
+                        <strong>{post.title}</strong>
+                        <br/>
+                            {post.body}
                     </li>
                 ))}
             </ol>
