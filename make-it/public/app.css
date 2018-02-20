@@ -81,7 +81,7 @@ form .InputForm input {
   font-size: 16px;
   padding: 20px 40px;
   background-color: #eeeeee;
-  border: 1px solid #B2AFA1;
+  border: 1px solid rgba(255, 255, 255, 0);
 }
 
 form .InputForm .weak[type='password'] {
@@ -145,7 +145,7 @@ form select {
   -webkit-appearance: none;
   width: 100%;
   padding: 20px 40px;
-  border: 1px solid #B2AFA1;
+  border: 1px solid rgba(255, 255, 255, 0);
   background-image: url(https://image.flaticon.com/icons/svg/118/118738.svg);
   background-position: 95%;
   background-repeat: no-repeat;
