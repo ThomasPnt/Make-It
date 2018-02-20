@@ -1,3 +1,5 @@
+@import "variable";
+
 form {
   margin: 0 auto;
   width: 50%;
@@ -8,7 +10,7 @@ form {
     padding: 15px;
     color: white;
     font-weight: bold;
-    background-color: #B2AFA1;
+    background-color: $grey;
     text-transform: uppercase;
     box-shadow: none;
     border-radius: 2px;
@@ -23,8 +25,8 @@ form {
       width: calc(100% - 40px);
       font-size: 16px;
       padding: 20px 20px;
-      background-color: #eeeeee;
-      border: 1px solid #D7C5C2;
+      background-color: $lightgrey;
+      border: 1px solid $grey;
     }
     .weak[type='password']{
       background-image: url(https://image.flaticon.com/icons/svg/149/149465.svg);
@@ -62,7 +64,7 @@ form {
     }
     input[type="checkbox"] {
       border: 1px solid red;
-      background: #FFF;
+      background: white;
       -webkit-appearance: none;
       padding: 5px;
       width: 5px;
@@ -72,14 +74,14 @@ form {
     }
   }
   select {
-    color: #7f7f7f;
+    color: $black;
     font-size: 16px;
-    background-color: #eeeeee;
+    background-color: $lightgrey;
     text-transform: uppercase;
     -webkit-appearance: none;
     width: 100%;
     padding: 20px 20px 20px 20px;
-    border: 1px solid #D7C5C2;
+    border: 1px solid $grey;
     background-image: url(https://image.flaticon.com/icons/svg/118/118738.svg);
     background-position: 95%;
     background-repeat: no-repeat;

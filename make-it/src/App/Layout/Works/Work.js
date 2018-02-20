@@ -9,7 +9,7 @@ class Work extends React.Component {
             <div>
                 <h1>Works</h1>
                 <div>
-                {/*    <PostList posts={this.props.posts}/>*/}
+                    <PostList posts={this.props.posts}/>
                 </div>
             </div>
         )
@@ -17,8 +17,7 @@ class Work extends React.Component {
 }
 
 function mapStateToProps(state , ownProps) {
-    console.log(state);
-    return { posts: state.posts };
+    return { posts: state.PostReducer };
 }
 
 

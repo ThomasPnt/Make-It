@@ -69,7 +69,7 @@ form .InputForm input {
   font-size: 16px;
   padding: 20px 20px;
   background-color: #eeeeee;
-  border: 1px solid #D7C5C2;
+  border: 1px solid #B2AFA1;
 }
 
 form .InputForm .weak[type='password'] {
@@ -115,7 +115,7 @@ form .InputForm input:focus {
 
 form .InputForm input[type="checkbox"] {
   border: 1px solid red;
-  background: #FFF;
+  background: white;
   -webkit-appearance: none;
   padding: 5px;
   width: 5px;
@@ -133,7 +133,7 @@ form select {
   -webkit-appearance: none;
   width: 100%;
   padding: 20px 20px 20px 20px;
-  border: 1px solid #D7C5C2;
+  border: 1px solid #B2AFA1;
   background-image: url(https://image.flaticon.com/icons/svg/118/118738.svg);
   background-position: 95%;
   background-repeat: no-repeat;
@@ -198,7 +198,7 @@ form #error {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  color: #7f7f7f;
+  color: #B2AFA1;
   font-size: 1em;
   font-weight: 100;
 }
