@@ -35,6 +35,7 @@
 
 .header ul li .selected {
   color: crimson;
+  border-bottom: 1px dotted crimson;
 }
 
 form {
@@ -294,6 +295,11 @@ form #error {
   .work {
     width: 90%;
   }
+}
+
+.error {
+  text-align: center;
+  font-size: 2rem;
 }
 
 body {

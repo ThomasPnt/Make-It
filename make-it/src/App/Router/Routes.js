@@ -7,6 +7,8 @@ import Track from "../Layout/SubmitTrack/Track";
 import Work from "../Layout/Works/Work";
 import Navbar from "../Header/HeaderComponent/Navbar";
 import SignIn from "../Layout/SignIn/SignIn";
+import NotFound from "../Layout/NotFound/NotFound";
+
 export default class Routes extends React.Component {
     render() {
         return (
@@ -23,7 +25,8 @@ export default class Routes extends React.Component {
                             <Route exact path='/Works' component={Work}/>
                             <Route exact path='/Pricing' component={Pricing}/>
                             <Route exact path='/SignIn' component={SignIn}/>
-                            <Route path='/' component={SignIn}/>
+                            <Route exact path='/' component={SignIn}/>
+                            <Route component={NotFound} />
                         </Switch>
                     </div>
                 </div>
