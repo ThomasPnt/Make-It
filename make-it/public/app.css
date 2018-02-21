@@ -95,7 +95,7 @@ form .InputForm .middle[type='password'] {
 
 form .InputForm #weak {
   background-image: url(https://image.flaticon.com/icons/svg/149/149149.svg);
-  color: green;
+  color: red;
   padding-left: 20px;
   background-repeat: no-repeat;
 }
@@ -110,7 +110,7 @@ form .InputForm #middle {
 form .InputForm #strong {
   background-image: url(https://image.flaticon.com/icons/svg/149/149149.svg);
   background-repeat: no-repeat;
-  color: red;
+  color: green;
   padding-left: 20px;
 }
 
