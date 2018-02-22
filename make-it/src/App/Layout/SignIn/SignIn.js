@@ -9,15 +9,16 @@ import {addUser} from "../../Actions/ActionUser";
 class SignIn extends React.Component {
     handleSubmit = (values) => {
         var data = {
-            id : new Date().valueOf(),
-            email : values.email,
-            firstName : values.firstName,
-            lastName : values.lastName,
-            password : values.password,
-            country : values.country,
-            news : values.news
+            id: new Date().valueOf(),
+            email: values.email,
+            firstName: values.firstName,
+            lastName: values.lastName,
+            password: values.password,
+            country: values.country,
+            news: values.news
         };
         this.props.addUser(data);
+        this.props.history.push('/Works');
     };
 
     render() {
@@ -32,13 +33,13 @@ class SignIn extends React.Component {
 }
 
 function mapDispatchToProps(dispatch) {
-    return bindActionCreators({addUser},dispatch)
+    return bindActionCreators({addUser}, dispatch)
 }
 
 function mapStateToProps(state) {
-    /*console.log(state.UserReducer);*/
-    return { UserReducer : state.UserReducer };
+    console.log(state.UserReducer);
+    return {UserReducer: state.UserReducer};
 }
 
 
-export default connect(mapStateToProps,mapDispatchToProps)(SignIn);
+export default connect(mapStateToProps, mapDispatchToProps)(SignIn);
