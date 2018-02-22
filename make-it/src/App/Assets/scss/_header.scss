@@ -41,7 +41,13 @@
 }
 
 @media (max-width: 580px) {
-  #logoDiv{
-    display: none;
+  .header{
+    #logoDiv{
+      display: none;
+    }
+    ul{
+      margin-right: 0;
+      padding: 0;
+    }
   }
 }
