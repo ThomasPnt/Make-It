@@ -34,3 +34,14 @@
   }
 }
 
+@media (max-width: 900px) {
+  .header {
+    display: flex;
+  }
+}
+
+@media (max-width: 580px) {
+  #logoDiv{
+    display: none;
+  }
+}

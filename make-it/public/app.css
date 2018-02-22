@@ -38,9 +38,23 @@
   border-bottom: 1px dotted crimson;
 }
 
+@media (max-width: 900px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 580px) {
+  #logoDiv {
+    display: none;
+  }
+}
+
 form {
   margin: 0 auto;
-  width: 50%;
+  width: 100%;
   display: table;
 }
 
@@ -83,14 +97,6 @@ form .InputForm input {
   padding: 20px 40px;
   background-color: #eeeeee;
   border: 1px solid rgba(255, 255, 255, 0);
-}
-
-form .InputForm .weak[type='password'] {
-  background-image: url(https://image.flaticon.com/icons/svg/149/149465.svg);
-}
-
-form .InputForm .middle[type='password'] {
-  background-image: url(https://image.flaticon.com/icons/svg/149/149464.svg);
 }
 
 form .InputForm #weak {
@@ -186,21 +192,22 @@ form #error {
   float: left;
 }
 
-@media (min-width: 1100px) {
-  form {
-    width: 35%;
+@media (max-width: 500px) {
+  .form {
+    width: 100%;
   }
 }
 
 .signin {
   margin: 0 auto;
+  width: 500px;
 }
 
 .signin .headerSignIn {
   text-align: center;
   font-size: 1em;
   border-bottom: 1px solid rgba(127, 127, 127, 0.5);
-  width: calc(50% + 20px);
+  width: 100%;
   margin: auto;
 }
 
@@ -239,9 +246,9 @@ form #error {
   font-weight: 100;
 }
 
-@media (min-width: 1100px) {
-  .signin .headerSignIn {
-    width: calc(35% + 20px);
+@media (max-width: 500px) {
+  .signin {
+    width: 100%;
   }
 }
 

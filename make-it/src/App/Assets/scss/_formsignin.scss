@@ -2,7 +2,7 @@
 
 form {
   margin: 0 auto;
-  width: 50%;
+  width: 100%;
   display: table;
   .sideBar{
     position: absolute;
@@ -37,12 +37,6 @@ form {
       padding: 20px 40px;
       background-color: $lightgrey;
       border: 1px solid rgba(255,255,255,0);
-    }
-    .weak[type='password']{
-      background-image: url(https://image.flaticon.com/icons/svg/149/149465.svg);
-    }
-    .middle[type='password']{
-      background-image: url(https://image.flaticon.com/icons/svg/149/149464.svg);
     }
     #weak{
       background-image: url(https://image.flaticon.com/icons/svg/149/149149.svg);
@@ -125,8 +119,8 @@ form {
   }
 }
 
-@media (min-width: 1100px) {
-  form {
-    width: 35%;
+@media (max-width: 500px) {
+  .form {
+    width: 100%;
   }
 }
