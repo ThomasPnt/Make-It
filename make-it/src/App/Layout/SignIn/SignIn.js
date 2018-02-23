@@ -37,7 +37,7 @@ function mapDispatchToProps(dispatch) {
 }
 
 function mapStateToProps(state) {
-    console.log(state.UserReducer);
+    /*console.log(state.UserReducer);*/
     return {UserReducer: state.UserReducer};
 }
 
